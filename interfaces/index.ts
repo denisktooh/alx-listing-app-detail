@@ -35,6 +35,7 @@ export interface PropertyProps {
   category: string[];
   price: number;
   offers: Offers;
-  image: Url;
+  image: string;
   discount: string;
+  description?: string;
 }
