@@ -1,15 +1,18 @@
 import React from "react";
+import Link from 'next/link'
 
 const Header: React.FC = () => {
   return (
     <header className="w-full bg-white shadow-sm py-4 px-6 flex items-center justify-between">
-      
+
       <div className="flex-shrink-0">
-        <img
-          src="/assets/logo.png"
-          alt="Logo"
-          className="w-12 md:w-14 object-contain"
-        />
+        <Link href="/">
+          <img
+            src="/assets/logo.png"
+            alt="Logo"
+            className="w-12 md:w-14 object-contain cursor-pointer"
+          />
+        </Link>
       </div>
 
       <div className="flex items-end bg-white rounded-full shadow-md px-6 py-3 space-x-6 border border-gray-200">
